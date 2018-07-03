@@ -2,31 +2,44 @@
 #MainContainer{
     margin : auto;
     padding: 10px;
-    height: 80px;
+    height: 100px;
     width: 80%;
     border-bottom: 5px;
     border-bottom-style: inset;
     border-bottom-color: #999;
 }
+header #info{
+    width: auto;
+    height: 50px;
+    background-color: #99CC66;
+}
 header #logo{
+    width: 15%;
     float: left;
     margin-left: 20px;
 }
 header a{
     text-decoration: none;
-    color: #222;
     font-size: 20px;
-    color: #999;
-    
+    color: #666;  
 }
 header .navBox{
-    margin: 20px;
+    text-align: center;
+    width: 10%;
+    height: 23px;
+    margin: 25px;
     padding: 5px;
     text-align: center;
     float: right;
     letter-spacing: 2px;
     display: block;
 }
+ 
+header .navBox:hover{
+    background-color:darkolivegreen;
+}
+    
+
 @media screen and (max-width: 800px){
     header{
         display: none;
