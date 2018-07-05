@@ -1,6 +1,9 @@
-#InfoContainer, #naviContainer{
+/* AIzaSyAOGxEtHo6WsWy0gZ26SvYpXnWka_oXvDQ API key  */
+
+
+#InfoContainer, #naviContainer, #mainContainer, #footerContainer{
     height: 50px;
-    background-color: gray;
+    background-color: #666;
     width: 100%;
 }
 
@@ -34,7 +37,7 @@ a{
     color: white;
     margin-top: 20px;
    }
-#info a:hover{
+#info a:hover, a:active{
     color: #ccc;
 }
 
@@ -45,7 +48,7 @@ a{
 #naviContainer{
     background-color: white;
 }
-#navi{
+#navi, #main{
     width: 85%;
     margin: auto;
 }
@@ -64,4 +67,94 @@ a{
 }
 #navi a:hover{
     color: black;
+}
+
+/* MAIN CONTAINER with background image */
+
+#mainContainer{
+    height: 500px;
+    background-image: url(../img/T%C5%82oSkala.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 100%;
+    opacity: 0.7;
+    margin-bottom: 50px;   
+}
+#main h1{
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 5px;
+   
+}
+#main h2{
+     font-family: 'Lobster', cursive;
+     font-size: 1.5em;
+     margin-top: 5px;
+    text-align: center;
+}
+#smallerContainer{
+    width: 85%;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 40px;
+    
+}
+#LocationInfo{
+    height: 500px;
+    width: 50%;
+    float: right;
+}
+#LocationInfo h2{
+    font-family: 'Lobster', cursive;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#LocationInfo p{
+    font-family: 'Lobster', cursive;
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#map{
+    height: 370px;
+    width: auto;
+    border: 2px solid #333;
+}
+
+#glupoty{
+    
+    height: 300px;
+    width: 40%;
+    padding: 40px;
+    border: 2px solid #333;
+    margin-top: 110px;
+    float: left;
+    color: white;
+    background-color: #333;
+    letter-spacing: 2px;
+    line-height: 20px;
+    
+}
+
+
+/* Footer */
+
+#footerContainer{
+    margin-top: 30px;
+    background-color: #333;
+}
+#stopka{
+    width: 85%;
+    margin: auto;
+}
+#stopka p{
+    color: white;
+    padding: 18px;
+    font-size: 13px;
 }

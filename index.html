@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,14 +6,17 @@
         <meta charset="utf-8">
         <title>ONT Tomasz Sadkowski</title>
         <meta name="keywords" content="Piły,Noże,Ostrzenie,Krążkowe,ONT,Tomasz,Sadkowski,Żychlin">
-        <meta name="viewport" content="width=debice-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="script/script.js"> </script>
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link href="fontello/phone/css/fontello.css" rel="stylesheet" type="text/css">
         <link href="fontello/mail/css/fontello.css" rel="stylesheet" type="text/css">
         <link href="fontello/linkedin/css/fontello.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     </head>
     <body>
+        
+         <!-- Container with number linkedin and mail adress -->
           <div id="InfoContainer">
             <div id="info">
                 <i class="icon-phone"></i>
@@ -22,6 +26,8 @@
                 <a href="https://www.linkedin.com/in/tomasz-sadkowski-352962160/" target="_blank"><i class="icon-linkedin-rect"></i></a>
             </div>
            </div>
+        
+        <!-- Container with navigation -->
          <div id ="naviContainer">
              <div id="navi">
                 <img src ="img/logoSkala.png">
@@ -32,8 +38,53 @@
                      <a href="../ONTProject/Website/Contact.html">Kontakt</a>
                 </nav>
              </div>
-           
          </div>
+        
+        <!-- Main Container on website -->
+        <div id="mainContainer">
+            <div id="main">
+                <h1> Ostrzenie narzędzi tnących</h1>
+                <h2> Tomasz Sadkowski</h2>
+            </div>
+        </div>
+           <!-- Container containing maps -->
+        <div id="smallerContainer">
+            
+            <div id="LocationInfo">
+                <h2>Tutaj możecie nas znaleźć</h2>
+                <p>Śleszyn 99-321</p>
+                <p>ul. Biała 30</p>
+                
+              <div id="map">
+                    <script>
+                function initMap() {
+                  var uluru = {lat: 52.207139, lng: 19.690305};
+                  var map = new google.maps.Map(
+                      document.getElementById('map'), {zoom: 12, center: uluru});
+                  var marker = new google.maps.Marker({position: uluru, map: map});
+                }
+                    </script>
+                    <script async defer
+                        script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOGxEtHo6WsWy0gZ26SvYpXnWka_oXvDQ&callback=initMap"?>
+                    </script>
+                </div>
+            </div>
+          
+            
+            <div id="glupoty">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac faucibus lorem, eget lacinia justo. Ut ac quam sed justo imperdiet ultricies. Ut ut nunc in neque imperdiet ornare non dapibus enim. Praesent pulvinar arcu turpis, quis ullamcorper dui egestas at. Aenean eget tellus augue. Curabitur malesuada ultricies ultrices. Pellentesque scelerisque nisi posuere diam fringilla eleifend id in velit. Aenean ornare tellus felis. Aliquam vel placerat nisl. Ut imperdiet sapien in maximus feugiat. In convallis pharetra erat, feugiat interdum justo imperdiet in. Phasellus fringilla, ante ac varius suscipit, diam lectus congue ex, tincidunt lacinia est ipsum ut felis.</p>
+            </div>
+        
+        </div>            
+        
+        <!-- Footer Container -->
+        <div id="footerContainer">
+            <div id="stopka">
+                <p>Copyright &copy; 2018</p>
+           </div>
+        </div>
+        
+    
      
     </body>
 </html>
