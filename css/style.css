@@ -60,11 +60,6 @@ a{
 #navi img{
     float: left;
 }
-
-#activeWebsite a{
-    color:black;
-}
-
 #navi a{
     color: gray;
     float: right;
@@ -73,8 +68,6 @@ a{
     margin-left: 5px;
     font-size: 25px;
 }
-
-
 #navi a:hover{
     color: black;
 }
@@ -115,7 +108,7 @@ a{
     width: 50%;
     float: right;
 }
-#LocationInfo h2{
+#LocationInfo h2, #AboutInfo h2{
     font-family: 'Lobster', cursive;
     color: black;
     font-size: 1.5em;
@@ -137,22 +130,70 @@ a{
     border: 2px solid #333;
 }
 
-#glupoty{
+#AboutInfo{
+    height: 500px;
+    width: 45%;
+    float: left;
+}
+
+#About {
     
     height: 290px;
-    width: 40%;
     padding: 40px;
     border: 2px solid #333;
-    margin-top: 83px;
+    margin-top: 30px;
     float: left;
     color: white;
     background-color: #333;
     letter-spacing: 2px;
     line-height: 20px;
+    text-align: justify;
     
 }
 
+#OffertContainer{
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    height: 700px;
+    color: #555;
+}
+#OffertInfo{
+    color: #222;
+    width: 70%;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #f5f5ef;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+.par, .par1{
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 3px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #222;
+}
+.par1{
+    font-size: 16px;
+}
 
+#OffertContainer ul, .OfferDescription{
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 7px;
+}
+
+#ContactContainer{
+    height: 400px;
+    width: 85%;
+    margin: auto;
+    background-color: #aaa;
+}
 /* Footer */
 
 #footerContainer{
