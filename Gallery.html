@@ -19,7 +19,7 @@
          <!-- Container with number linkedin and mail adress -->
           <div id="InfoContainer">
             <div id="info">
-                <i class="icon-phone"></i>
+                <i class="icon-email"></i> 
                 <p>Żychlin: +48728329102 </p>
                 <i class="icon-email"></i>
                 <p>ONTSadkowski@gmail.com</p>
@@ -39,6 +39,45 @@
                 </nav>
              </div>
          </div>
+        <!-- Container with Gallery -->
+        
+        <div id="GalleryContainer">
+            <video src="WP_20180422_08_52_54_Pro.mp4" autoplay="true" muted loop="true" alt="Nie udało się wczytać video"></video>       
+            
+            <img class="mySlides" src="img/zdicia/No%C5%BCe.jpg" alt="Nie udało się wczytać zdjęcia">
+            <img class="mySlides" src="img/zdicia/N%C3%B3%C5%BC%20g%C3%B3rny%20przed%20ostrzeniem%203%20hjd.jpg" alt="Nie udało się wczytać zdjęcia">
+            <img class="mySlides" src="img/zdicia/WP_20170423_17_26_14_Pro.jpg" alt="Nie udało się wczytać zdjęcia">
+            <img class="mySlides" src="img/zdicia/WP_20170824_14_44_06_Pro.jpg" alt="Nie udało się wczytać zdjęcia">
+            <img class="mySlides" src="img/zdicia/WP_20170903_10_34_59_Pro.jpg" alt="Nie udało się wczytać zdjęcia">
+            <img class="mySlides" src="img/zdicia/WP_20171120_09_45_33_Pro.jpg" alt="Nie udało się wczytać zdjęcia">
+            <img class="mySlides" src="img/zdicia/WP_20171120_09_46_31_Pro.jpg" alt="Nie udało się wczytać zdjęcia">
+            <img class="mySlides" src="img/zdicia/WP_20180303_10_32_09_Pro.jpg" alt="Nie udało się wczytać zdjęcia">
+            <img class="mySlides" src="img/zdicia/WP_20180319_09_14_17_Pro.jpg" alt="Nie udało się wczytać zdjęcia">
+            <img class="mySlides" src="img/zdicia/WP_20180403_05_24_14_Pro.jpg" alt="Nie udało się wczytać zdjęcia">
+            <img class="mySlides" src="img/zdicia/WP_20180421_09_52_11_Pro.jpg" alt="Nie udało się wczytać zdjęcia">
+            
+            <button class="button" id="leftArrow" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button" id="rightArrow" onclick="plusDivs(+1)">&#10095;</button>
+            <script>
+                var slideIndex = 2;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1} 
+                    if (n < 1) {slideIndex = x.length} ;
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none"; 
+                    }
+                    x[slideIndex-1].style.display = "block"; 
+                }
+            </script>
+        </div>
         
       
         
