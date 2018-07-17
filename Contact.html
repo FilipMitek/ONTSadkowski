@@ -13,6 +13,7 @@
         <link href="fontello/mail/css/fontello.css" rel="stylesheet" type="text/css">
         <link href="fontello/linkedin/css/fontello.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
     </head>
     <body>
         
@@ -41,15 +42,52 @@
          </div>
         
         <div id="ContactContainer">
-            <div class="ContactBoxes" id="ContactBox1">
-            
+                <h1>Lokalizacja</h1>
+            <div id="LocationInfo">
+                
+              <div id="map">
+                 
+                  <script>
+                function initMap() {
+                  var uluru = {lat: 52.207139, lng: 19.690305};
+                  var uluru1 = {lat: 52.2356671, lng: 19.631928600000037};
+                  var map = new google.maps.Map(
+                      document.getElementById('map'), {zoom: 11, center: uluru});
+                  var marker = new google.maps.Marker({position: uluru, map: map}); 
+                  var marker = new google.maps.Marker({position: uluru1, map: map});
+                 
+                }
+                    </script>
+                    <script async defer
+                        script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOGxEtHo6WsWy0gZ26SvYpXnWka_oXvDQ&callback=initMap"?>
+                    </script>
+                </div>
             </div>
-            <div class="ContactBoxes" id="ContactBox2">
             
+            <div id="AddressInfo">   
+                    <div id="firstAddress">
+                       <a target="_blank" href="https://www.google.pl/maps/dir//Sienkiewicza+76,+99-320+%C5%BBychlin/@52.2356736,19.6275512,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471b9238a7206da7:0xefc4c7c642c9ba5d!2m2!1d19.6319286!2d52.2356671?hl=pl">
+                         <p>99-320 Żychlin</p>
+                         <p>ul.Sienkiewicza 76</p>
+                        </a>
+                       
+                    </div>
+                    <div id="secondAddress">
+                      <a target="_blank" href="https://www.google.pl/maps/dir//99-320+%C5%9Aleszyn/@52.1977548,19.6871522,13.42z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471b9327117dc66b:0xf7844ae0b7b9ce26!2m2!1d19.6903049!2d52.2071389?hl=pl">
+                        <p>99-321 Śleszyn</p>
+                        <p>ul.Biała 30 </p>
+                        </a>
+                    </div>
+                    
+                    <ul>
+                        <li><span>e-mail:</span> ONTSadkowski@gmail.com</li>
+                        <li><span>telefon:</span> +48 728 329 102</li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/tomasz-sadkowski-352962160/"><span>linkedin:</span>tomasz-sadkowski-352962160</a></li>
+                    </ul>
+                   
+              
             </div>
-            <div class="ContactBoxes" id="ContactBox3">
             
-            </div>
         </div>
         
       

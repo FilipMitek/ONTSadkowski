@@ -108,7 +108,7 @@ a{
     width: 50%;
     float: right;
 }
-#LocationInfo h2, #AboutInfo h2{
+#LocationInfo h2, #AboutInfo h2, #gridContainer h2{
     font-family: 'Lobster', cursive;
     color: black;
     font-size: 1.5em;
@@ -128,6 +128,8 @@ a{
     height: 370px;
     width: auto;
     border: 2px solid #333;
+    opacity: 1;
+    border-radius: 25px;
 }
 
 #AboutInfo{
@@ -187,35 +189,6 @@ a{
     padding-left: 30px;
     margin-top: 7px;
 }
-/* Contact container*/
-
-#ContactContainer{
-    height: 400px;
-    width: 85%;
-    margin: auto;
-}
-.ContactBoxes{
-    width: 25%;
-    height: 200px;
-    background-color: #aaa;
-    float: left;
-    margin: 45px;
-    margin-top: 70px;
-    border-radius: 20px;
-}
-#ContactBox1{
-    float: left;
-    margin-left: 15px;
-}
-#ContactBox2{
-    float: left;
-    margin-left: 80px;
-}
-#ContactBox3{
-    float: right;
-    margin-right: 15px;
-}
-
 /* Gallery */
 #GalleryContainer{
     border-radius: 8px;
@@ -228,7 +201,7 @@ a{
     max-width: 100%;
     border-radius: 25px;
     border: 5px solid #333;
-    opacity: 0.8;
+
     float: left;
     margin: 10px;
     padding: 2px;
@@ -238,7 +211,7 @@ a{
     border-radius: 25px;
     height: 300px;
     max-width: 100%;
-    margin: 10px;
+    margin: 5px;
     padding : 2px;
     float: right;
 }
@@ -268,6 +241,10 @@ a{
     display: grid;
     grid-gap: 1em; 
 }
+#gridContainer h2{
+    font-size: 1.8em;
+    color: #555;
+}
 #gridContainer img{
     border: 2px solid #333;
     border-radius: 25px;
@@ -281,6 +258,66 @@ a{
 .column{
     float: left;
     width: 25%;
+}
+
+/* Contact Website */
+
+#ContactContainer{
+    width: 85%;
+    height: 500px;
+    display: block;
+    padding: 30px;
+    
+}
+#ContactContainer h1{
+    font-size: 2em;
+    color: #666;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+#AddressInfo{
+    height: 370px;
+    width: 45%;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 40px;
+    border: 1px solid black;
+    background-color: #333;
+    color: white;
+    border: 5px solid #e0e0d1;
+    border-radius: 25px;
+    padding: 2px;
+    font-family: 'Gaegu', cursive;
+    font-size: 17px;
+    font-weight:bold;
+}
+#AddressInfo ul{
+    display: block;
+    text-align: left;
+    margin: 5px;
+    margin-top: 100px;
+    line-height: 36px;
+    list-style: none;
+    letter-spacing: 2px;
+}
+span{
+    color: #a3a375;
+}
+
+#firstAddress, #secondAddress{
+    width: 26%;
+    float: left;
+    margin-right: 50px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    border:1px solid #e0e0d1;
+    border-radius: 25px;
+    padding: 5px;
+}
+#firstAddress:hover, #secondAddress:hover{
+    background-color: #444;
 }
 
 /* Footer */

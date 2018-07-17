@@ -58,9 +58,11 @@
                     <script>
                 function initMap() {
                   var uluru = {lat: 52.207139, lng: 19.690305};
+                  var uluru1 = {lat: 52.2356671, lng: 19.631928600000037};
                   var map = new google.maps.Map(
                       document.getElementById('map'), {zoom: 12, center: uluru});
                   var marker = new google.maps.Marker({position: uluru, map: map});
+                  var marker = new google.maps.Marker({position: uluru1, map: map});
                 }
                     </script>
                     <script async defer
