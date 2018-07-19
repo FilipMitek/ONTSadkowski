@@ -26,6 +26,7 @@ a{
 }
 
 .icon-linkedin-rect{
+    font-size: 25px;
     float: right;
     padding-right: 15px;
     margin-top:12px;
@@ -33,14 +34,16 @@ a{
 #info p{
     float: left;
     width: 20%;
-    font-size: 12px;
+    font-size: 1vw;
     color: white;
     margin-top: 20px;
    }
 #info a:hover{
     color: #ccc;
 }
-
+div{
+    display: block;
+}
 
 /* NAVI CONTAINER */
 
@@ -59,6 +62,7 @@ a{
 }
 #navi img{
     float: left;
+    font-size: 3vw;
 }
 #navi a{
     color: gray;
@@ -66,14 +70,13 @@ a{
     margin-top: 30px;
     margin-right: 15px;
     margin-left: 5px;
-    font-size: 25px;
+    font-size: 1.8vw;
 }
 #navi a:hover{
-    color: black;
+    color:  #a3a375;
 }
 
 /* MAIN CONTAINER with background image */
-
 #mainContainer{
     height: 500px;
     background-image: url(../img/T%C5%82oSkala.jpg);
@@ -85,14 +88,14 @@ a{
 }
 #main h1{
     font-family: 'Lobster', cursive;
-    font-size: 3em;
+    font-size: 3vw;
     text-align: center;
     margin-bottom: 5px;
    
 }
 #main h2{
      font-family: 'Lobster', cursive;
-     font-size: 1.5em;
+     font-size: 1.5vw;
      margin-top: 5px;
     text-align: center;
 }
@@ -111,22 +114,23 @@ a{
 #LocationInfo h2, #AboutInfo h2, #gridContainer h2{
     font-family: 'Lobster', cursive;
     color: black;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     text-align: center;
     margin-bottom: 5px;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 #LocationInfo p{
     font-family: 'Lobster', cursive;
     color: black;
-    font-size: 1.2em;
+    font-size: 1.3vw;
     text-align: center;
-    margin-top: 5px;
     margin-bottom: 5px;
 }
 
 #map{
     height: 370px;
-    width: auto;
+    width: 100%;
     border: 2px solid #333;
     opacity: 1;
     border-radius: 25px;
@@ -139,16 +143,17 @@ a{
 }
 
 #About {
-    
+    font-size: 1vw;
     height: 290px;
     padding: 40px;
+    padding-top: 30px;
     border: 2px solid #333;
-    margin-top: 30px;
+    margin-top: 42px;
     float: left;
     color: white;
     background-color: #333;
     letter-spacing: 2px;
-    line-height: 20px;
+    line-height: 18px;
     text-align: justify;
     
 }
@@ -157,13 +162,16 @@ a{
     text-align: center;
     width: 85%;
     margin: auto;
-    height: 700px;
+    height: auto;
     color: #555;
+}
+#OffertContainer h2{
+    font-size: 2vw;
 }
 #OffertInfo{
     color: #222;
     width: 70%;
-    height: 100px;
+    height: auto;
     margin: auto;
     margin-bottom: 50px;
     padding-top: 15px;
@@ -172,29 +180,34 @@ a{
     border-top-left-radius: 30%;
     border-bottom-right-radius: 30%;
 }
+#OffertInfo p{
+    font-size: 1.2vw;
+}
 .par, .par1{
     text-align: left;
     padding-left: 10px;
     margin-bottom: 3px;
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 1.5vw;
     color: #222;
-}
-.par1{
-    font-size: 16px;
 }
 
 #OffertContainer ul, .OfferDescription{
     text-align: left;
     padding-left: 30px;
     margin-top: 7px;
+    font-size: 1.2vw;
 }
+
 /* Gallery */
+
+
 #GalleryContainer{
     border-radius: 8px;
     height: 350px;
     width: 85%;
     margin: auto;
+    position: relative;
 }
 #GalleryContainer video{
     height: 300px;
@@ -216,19 +229,19 @@ a{
     float: right;
 }
 .button{
-    border: none;
-    font-size: 30px;
-    color: white;
     position: absolute;
+    border: none;
+    font-size: 2.5vw;
+    color: white;
     background-color: transparent;
 }
 #leftArrow{
-    left: 700px;
-    top: 270px;
+    left: 52%;
+    top: 40%;
 }
 #rightArrow{
-    top:270px;
-    right: 140px;
+    top:40%;
+    right: 2%;
 }
 #rightArrow:hover, #leftArrow:hover{
     cursor: pointer;
@@ -242,7 +255,7 @@ a{
     grid-gap: 1em; 
 }
 #gridContainer h2{
-    font-size: 1.8em;
+    font-size: 2.5vw;
     color: #555;
 }
 #gridContainer img{
@@ -264,9 +277,10 @@ a{
 
 #ContactContainer{
     width: 85%;
+    margin: auto;
     height: 500px;
     display: block;
-    padding: 30px;
+
     
 }
 #ContactContainer h1{
@@ -281,7 +295,7 @@ a{
     width: 45%;
     text-align: center;
     margin-left: 20px;
-    margin-top: 40px;
+    margin-right: 5px;
     border: 1px solid black;
     background-color: #333;
     color: white;
@@ -289,11 +303,14 @@ a{
     border-radius: 25px;
     padding: 2px;
     font-family: 'Gaegu', cursive;
-    font-size: 17px;
+    font-size: 1.2vw;
     font-weight:bold;
+    float: left;
+}
+#AddressButton{
+    width: 100%;
 }
 #AddressInfo ul{
-    display: block;
     text-align: left;
     margin: 5px;
     margin-top: 100px;
@@ -319,6 +336,16 @@ span{
 #firstAddress:hover, #secondAddress:hover{
     background-color: #444;
 }
+#contactLocationInfo{
+    width: 50%;
+    float: right;
+}
+#MapsName{
+    display: none;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 3vw;
+}
 
 /* Footer */
 
@@ -333,6 +360,166 @@ span{
 #stopka p{
     color: white;
     padding: 18px;
-    font-size: 13px;
+    font-size: 1vw;
     letter-spacing: 0.3em;
+}
+
+
+
+/*Media Queries RWD */
+
+
+@media screen and (max-width:1350px){
+    #ContactContainer{
+        height: 900px;
+    }
+    #AddressInfo{
+        width: 100%;
+        margin-bottom: 15px;
+        height: auto;
+        margin-left: 0px;
+    }
+    #firstAddress, #secondAddress{
+        width: 97%;
+        margin:auto;
+        margin-left: 9px;
+    }
+    #contactLocationInfo{
+        width: 100%;
+    }
+    #MapsName{
+        display: block;
+    }
+    #GalleryContainer{
+        height: auto;
+    }
+    #GalleryContainer video{
+        display: block;
+        width: 100%;
+        height: auto;
+           }
+    #GalleryContainer img{
+        width: 100%;
+        float: none;
+        margin: 10px;
+        padding: 5px;
+        margin-bottom: 20px;
+        height: auto;
+    }
+    #gridContainer h2{
+        font-size: 3vw;
+    }
+    #leftArrow{
+        top: 73%;
+        left: 5%;
+    }
+    #rightArrow{
+        top: 73%;
+        right: 2%;
+        
+    }
+   
+}
+
+@media screen and (max-width: 780px){
+      #firstAddress, #secondAddress{
+        width: 97%;
+        margin:auto;
+        margin-left: 0spx;
+    }
+       #AddressInfo{
+        width: 100%;
+        margin-bottom: 15px;
+        height: auto;
+    }
+    #InfoContainer{
+        height: 27px;
+    }
+    #info p{
+        margin-top: 10px;
+    }
+    #City{
+        display: none;
+    }
+    .icon-phone, .icon-email, .icon-linkedin-rect{
+        font-size: 2.5vw;
+         margin-top: 8px;
+        margin-bottom: 3px;
+        padding-bottom: 5px;
+    }
+    #mainContainer{
+        margin: auto;
+        width: 85%;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    #ContactContainer{
+        height: 800px;
+    }
+    #AboutInfo{
+        height: auto;
+        width: 100%;
+        display: block;
+        
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #About{
+        overflow: hidden;
+        height: auto;
+    }
+    #OffertInfo{
+        height: auto;
+        margin-bottom: 5px;
+    }
+    #LocationInfo{
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+    #smallerContainer{
+        height: 850px;
+    }
+    #footerContainer{
+        width: 100%;
+        display: block;
+    }
+    #map{
+        display: block;
+        widows: 100%;
+    }
+ 
+    .par{
+        margin-bottom: 1px;
+        margin-top: 1px;
+    }
+
+    #footerContainer{
+        margin-top: 5px;
+        height: 20px;
+        padding: 0px;
+    }
+    #stopka p{
+        padding-top: 8px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:500px){
+    #mainContainer{
+        height: 200px;
+    }
+    #ContactContainer{
+        height: 750px;
+    }
+}
+@media sreen and(min-width: 1300px){
+    
+}
+
+@media screen and (min-width: 1200px){
+    #mainContainer{
+        height: 700px;
+    }
 }

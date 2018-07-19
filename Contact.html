@@ -42,29 +42,11 @@
          </div>
         
         <div id="ContactContainer">
-                <h1>Lokalizacja</h1>
-            <div id="LocationInfo">
-                
-              <div id="map">
-                 
-                  <script>
-                function initMap() {
-                  var uluru = {lat: 52.207139, lng: 19.690305};
-                  var uluru1 = {lat: 52.2356671, lng: 19.631928600000037};
-                  var map = new google.maps.Map(
-                      document.getElementById('map'), {zoom: 11, center: uluru});
-                  var marker = new google.maps.Marker({position: uluru, map: map}); 
-                  var marker = new google.maps.Marker({position: uluru1, map: map});
-                 
-                }
-                    </script>
-                    <script async defer
-                        script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOGxEtHo6WsWy0gZ26SvYpXnWka_oXvDQ&callback=initMap"?>
-                    </script>
-                </div>
-            </div>
             
-            <div id="AddressInfo">   
+            <h1>Lokalizacja</h1>
+            
+          <div id="AddressInfo">
+              <div id="AddressButton">
                     <div id="firstAddress">
                        <a target="_blank" href="https://www.google.pl/maps/dir//Sienkiewicza+76,+99-320+%C5%BBychlin/@52.2356736,19.6275512,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471b9238a7206da7:0xefc4c7c642c9ba5d!2m2!1d19.6319286!2d52.2356671?hl=pl">
                          <p>99-320 Żychlin</p>
@@ -78,7 +60,7 @@
                         <p>ul.Biała 30 </p>
                         </a>
                     </div>
-                    
+             </div> 
                     <ul>
                         <li><span>e-mail:</span> ONTSadkowski@gmail.com</li>
                         <li><span>telefon:</span> +48 728 329 102</li>
@@ -87,6 +69,27 @@
                    
               
             </div>
+        
+            <div id="contactLocationInfo">
+                <p id="MapsName">Mapa</p>
+              <div id="map">
+                 
+                  <script>
+                   function initMap() {
+                   var uluru = {lat: 52.207139, lng: 19.690305};
+                   var uluru1 = {lat: 52.2356671, lng: 19.631928600000037};
+                   var map = new google.maps.Map(
+                       document.getElementById('map'), {zoom: 11, center: uluru});
+                   var marker = new google.maps.Marker({position: uluru, map: map}); 
+                   var marker = new google.maps.Marker({position: uluru1, map: map});
+                 
+                    }   
+                    </script>
+                    <script async defer
+                        script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOGxEtHo6WsWy0gZ26SvYpXnWka_oXvDQ&callback=initMap"?>
+                    </script>
+                </div>
+            </div>      
             
         </div>
         
