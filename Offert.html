@@ -10,9 +10,7 @@
         <meta meta http-equiv= "x-ua-compatible" content= "ie=edge">
         <script src="script/script.js"> </script>
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link href="fontello/phone/css/fontello.css" rel="stylesheet" type="text/css">
-        <link href="fontello/mail/css/fontello.css" rel="stylesheet" type="text/css">
-        <link href="fontello/linkedin/css/fontello.css" rel="stylesheet" type="text/css">
+        <link href="fontello/fonty/css/icon-linkedin-rect.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     </head>
     <body>
@@ -21,7 +19,7 @@
           <div id="InfoContainer">
             <div id="info">
                 <i class="icon-phone"></i>
-                <p>Żychlin: +48728329102 </p>
+                <p><span id="City">Żychlin:</span> +48728329102 </p>
                 <i class="icon-email"></i>
                 <p>ONTSadkowski@gmail.com</p>
                 <a href="https://www.linkedin.com/in/tomasz-sadkowski-352962160/" target="_blank"><i class="icon-linkedin-rect"></i></a>
@@ -30,14 +28,16 @@
         
         <!-- Container with navigation -->
          <div id ="naviContainer">
-             <div id="navi">
-                <img src ="img/logoSkala.png">
+             <div id="navi" class="myTopnav">
+                <img src="img/logo.png">
                 <nav>
                      <a href="Contact.html">Kontakt</a>
                      <a href="Gallery.html">Galeria</a>
-                     <a href="Offert.html">Oferta</a>
-                     <a id="ActivePage" href="index.html">Strona główna</a>
+                     <a class="ActivePage" href="Offert.html">Oferta</a>
+                     <a href="index.html">Strona główna</a>
+                     <a href="javascript:void(0);" class="icon" onclick="menuFunction();"><i class="icon-menu-outline"></i></a>
                 </nav>
+                 
              </div>
          </div>
         

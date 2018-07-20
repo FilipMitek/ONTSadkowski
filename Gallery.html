@@ -9,9 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="script/script.js"> </script>
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link href="fontello/phone/css/fontello.css" rel="stylesheet" type="text/css">
-        <link href="fontello/mail/css/fontello.css" rel="stylesheet" type="text/css">
-        <link href="fontello/linkedin/css/fontello.css" rel="stylesheet" type="text/css">
+        <link href="fontello/fonty/css/icon-linkedin-rect.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     </head>
     <body>
@@ -20,8 +18,8 @@
          <!-- Container with number linkedin and mail adress -->
           <div id="InfoContainer">
             <div id="info">
-                <i class="icon-email"></i> 
-                <p>Żychlin: +48728329102 </p>
+                <i class="icon-phone"></i> 
+                <p><span id="City">Żychlin:</span> +48728329102 </p>
                 <i class="icon-email"></i>
                 <p>ONTSadkowski@gmail.com</p>
                 <a href="https://www.linkedin.com/in/tomasz-sadkowski-352962160/" target="_blank"><i class="icon-linkedin-rect"></i></a>
@@ -30,19 +28,18 @@
         
         
         <!-- Container with navigation -->
-         <div id ="naviContainer">
+         <div id ="naviContainer" class="myTopnav">
              <div id="navi">
-                <img src ="img/logoSkala.png">
+                <img src ="img/logo.png">
                 <nav>
                      <a href="Contact.html">Kontakt</a>
-                     <a href="Gallery.html">Galeria</a>
+                     <a class="ActivePage" href="Gallery.html">Galeria</a>
                      <a href="Offert.html">Oferta</a>
-                     <a id="ActivePage" href="index.html">Strona główna</a>
+                     <a href="index.html">Strona główna</a>
+                     <a href="javascript:void(0);" class="icon" onclick="menuFunction();"><i class="icon-menu-outline"></i></a>
                 </nav>
              </div>
          </div>
-        
-        
         <!-- Container with Gallery Slider and Video -->
         <div id="GalleryContainer">
             <video src="WP_20180422_08_52_54_Pro.mp4" autoplay="true" muted loop="true" alt="Nie udało się wczytać video"></video>       
@@ -155,10 +152,8 @@
                   </div>
                 </div>
             
-
-        </div>
       
-        
+    </div>
         <!-- Footer Container -->
         <div id="footerContainer">
             <div id="stopka">

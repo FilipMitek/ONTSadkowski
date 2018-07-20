@@ -1,6 +1,6 @@
 /* AIzaSyAOGxEtHo6WsWy0gZ26SvYpXnWka_oXvDQ API key  */
 
-#InfoContainer, #naviContainer, #mainContainer, #footerContainer{
+#InfoContainer, #naviContainer, #footerContainer{
     height: 50px;
     background-color: #666;
     width: 100%;
@@ -50,18 +50,26 @@ div{
 #naviContainer{
     background-color: white;
     position: sticky;
+   
     top: 0px;
     z-index: 3;
     height: 70px;
-    padding: px;
 }
 #navi, #main{
     width: 85%;
     margin: auto;
 }
+#navi{
+    position: relative;
+}
 #navi img{
+    margin-top: 5px;
     float: left;
-    font-size: 3vw;
+    height: 70px;
+    max-width: 195px;
+    position: absolute;
+    left: 0px;
+    top: 5px;
 }
 #navi a{
     color: gray;
@@ -75,8 +83,21 @@ div{
     color:  #a3a375;
 }
 
+.ActivePage{
+    font-weight: bold;
+    border: 1px solid #a3a375;
+    border-radius: 25px;
+    padding: 5px;
+    color: #a3a375;
+}
+.icon{
+    display: none;
+}
 /* MAIN CONTAINER with background image */
 #mainContainer{
+    clear: both;
+    width: 85%;
+    margin:auto;
     height: 500px;
     background-image: url(../img/T%C5%82oSkala.jpg);
     background-repeat: no-repeat;
@@ -84,6 +105,8 @@ div{
     background-size: 100%;
     opacity: 0.7;
     margin-bottom: 50px;   
+    display: block;
+    
 }
 #main h1{
     font-family: 'Lobster', cursive;
@@ -199,20 +222,27 @@ div{
 }
 
 /* Gallery */
-
+.windows{
+    height: auto;
+    width: 85%;
+    margin: auto;
+}
 
 #GalleryContainer{
+    clear: both;
     border-radius: 25px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-bottom: 2px solid #ccccb3;
-    border-top: 2px solid #ccccb3;
+    border-bottom: 3px solid #ccccb3;
+    border-top: 5px solid #ccccb3;
     height: 350px;
     width: 85%;
     margin: auto;
+    margin-top: 15px;
     padding: 5px;
     position: relative;
     background-color: #f5f5f0;
+    display: block;
 }
 #GalleryContainer video{
     height: 300px;
@@ -229,7 +259,7 @@ div{
     border-radius: 25px;
     height: 300px;
     max-width: 100%;
-    margin: 5px;
+    margin: 10px;
     padding : 2px;
     float: right;
 }
@@ -262,7 +292,7 @@ div{
     border-radius: 25px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    border-bottom: 2px solid #ccccb3;
+    border-bottom: 5px solid #ccccb3;
     padding: 5px;
 }
 #gridContainer h2{
@@ -297,11 +327,11 @@ div{
     
 }
 #ContactContainer h1{
-    font-size: 2em;
+    font-size: 2vw;
     color: #666;
     text-align: center;
     font-weight: normal;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 #AddressInfo{
     height: 370px;
@@ -411,7 +441,7 @@ span{
         font-size: 20px;
     }
     #stopka p{
-        font-size: 18px;
+        font-size: 13px;
     }
     .par, .par1 {
         font-size: 20px;
@@ -470,6 +500,7 @@ span{
         width: 100%;
         float: none;
         padding: 2px;
+        margin: auto;
         margin-bottom: 20px;
         height: auto;
         
@@ -499,13 +530,49 @@ span{
     
 }
 
-@media screen and (max-width: 780px){
-      #firstAddress, #secondAddress{
+@media screen and (max-width: 785px){
+    #naviContainer{
+        height: 80px;
+        display: block;
+    }
+    .myTopnav a {
+        display: none;
+    }
+    .myTopnav a.icon {
+        font-size:3vw; 
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0%;
+        top: 15px;
+    }
+    #navi a{
+        margin-top: 10px;
+    }
+    #navi img{
+        height: 40px;
+    }
+    .responsive{
+        height: 200px;
+        display: block;
+        margin-bottom: 10px;
+    }
+  .myTopnav.responsive a {
+    float: right;
+    text-align: right;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    
+          
+  }
+    
+    #firstAddress, #secondAddress{
         width: 97%;
         margin:auto;
         margin-left: 0spx;
     }
-       #AddressInfo{
+    #AddressInfo{
         width: 100%;
         margin-bottom: 15px;
         height: auto;
@@ -521,7 +588,7 @@ span{
     }
     .icon-phone, .icon-email, .icon-linkedin-rect{
         font-size: 2.5vw;
-         margin-top: 8px;
+         margin-top: 4px;
         margin-bottom: 3px;
         padding-bottom: 5px;
     }
@@ -532,7 +599,7 @@ span{
         margin-bottom: 10px;
     }
     #ContactContainer{
-        height: 800px;
+        height: 850px;
     }
     #AboutInfo{
         height: auto;
@@ -595,6 +662,15 @@ span{
 }
 
 @media screen and (max-width:500px){
+    #naviContainer{
+        height: 50px;
+    }
+      #navi img{
+        height: 25px;
+    }
+    .myTopnav a.icon {
+        top: 5px;
+    }
     #mainContainer{
         height: 200px;
     }
@@ -606,6 +682,9 @@ span{
         margin-bottom: 20px;
         width: 90%;
         float: none;
+    }
+    #About{
+        width: auto;
     }
 }
 @media screen and (max-width:680px){
